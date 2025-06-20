@@ -3,6 +3,9 @@ applications:
   - frontend:
       appRoot: projects/cloud-engineer-projects/project-1/frontend
       framework: nextjs
+      preBuild:
+        commands:
+          - npm ci
       buildCommand: npm run build
       startCommand: npm run start
       artifacts:

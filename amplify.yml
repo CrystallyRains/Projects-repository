@@ -6,8 +6,9 @@ applications:
       preBuild:
         commands:
           - npm ci
-      buildCommand: npm run build
-      startCommand: npm run start
+      build:
+        commands:
+          - npm run build
       artifacts:
         baseDirectory: .next
         files:
